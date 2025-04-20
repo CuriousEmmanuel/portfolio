@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBlog | Tech Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="margin: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background-color: #0a192f; color: #e6f1ff; line-height: 1.6;">
+    <!-- Navigation -->
+    <header style="position: fixed; top: 0; width: 100%; background-color: rgba(10, 25, 47, 0.9); backdrop-filter: blur(10px); padding: 25px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
+        <div style="color: #64ffda; font-size: 24px; font-weight: 700;">{"<DevBlog/>"}</div>
+        <nav>
+            <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                <li style="margin-left: 30px;"><a href="#" style="color: #e6f1ff; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 16px; transition: color 0.3s;">Home</a></li>
+                <li style="margin-left: 30px;"><a href="#" style="color: #e6f1ff; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 16px; transition: color 0.3s;">Articles</a></li>
+                <li style="margin-left: 30px;"><a href="#" style="color: #e6f1ff; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 16px; transition: color 0.3s;">Categories</a></li>
+                <li style="margin-left: 30px;"><a href="#" style="color: #e6f1ff; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 16px; transition: color 0.3s;">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="max-width: 1200px; margin: 100px auto 0; padding: 40px;">
+        <!-- Featured Post -->
+        <section style="margin-bottom: 80px;">
+            <h2 style="color: #64ffda; font-family: 'SF Mono', monospace; font-size: 20px; margin-bottom: 30px;">FEATURED POST</h2>
+            <article style="background-color: #112240; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Featured Post" style="width: 100%; height: 400px; object-fit: cover;">
+                <div style="padding: 40px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <span style="background-color: rgba(100, 255, 218, 0.1); color: #64ffda; padding: 5px 10px; border-radius: 5px; font-size: 12px; font-family: 'SF Mono', monospace;">WEB DEVELOPMENT</span>
+                        <span style="margin-left: 20px; color: #495670; font-size: 14px;">June 15, 2023 • 8 min read</span>
+                    </div>
+                    <h1 style="font-size: 36px; margin-bottom: 20px;">The Future of React: Exploring Concurrent Mode</h1>
+                    <p style="color: #8892b0; margin-bottom: 30px; font-size: 18px;">A deep dive into React's Concurrent Mode and how it's set to revolutionize the way we build responsive user interfaces with React 18 and beyond.</p>
+                    <a href="#" style="color: #64ffda; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 16px; display: inline-flex; align-items: center;">
+                        Read Article <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Recent Posts -->
+        <section>
+            <h2 style="color: #64ffda; font-family: 'SF Mono', monospace; font-size: 20px; margin-bottom: 30px;">RECENT ARTICLES</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+                <!-- Post 1 -->
+                <article style="background-color: #112240; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Post 1" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <span style="background-color: rgba(100, 255, 218, 0.1); color: #64ffda; padding: 5px 10px; border-radius: 5px; font-size: 12px; font-family: 'SF Mono', monospace;">JAVASCRIPT</span>
+                            <span style="margin-left: 15px; color: #495670; font-size: 12px;">May 28, 2023</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 15px;">Mastering Modern JavaScript Patterns</h3>
+                        <p style="color: #8892b0; margin-bottom: 20px; font-size: 16px;">Explore the most useful JavaScript patterns that every senior developer should know in 2023.</p>
+                        <a href="#" style="color: #64ffda; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 14px; display: inline-flex; align-items: center;">
+                            Read More <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article style="background-color: #112240; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Post 2" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <span style="background-color: rgba(100, 255, 218, 0.1); color: #64ffda; padding: 5px 10px; border-radius: 5px; font-size: 12px; font-family: 'SF Mono', monospace;">DEVOPS</span>
+                            <span style="margin-left: 15px; color: #495670; font-size: 12px;">April 15, 2023</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 15px;">Docker Best Practices for Developers</h3>
+                        <p style="color: #8892b0; margin-bottom: 20px; font-size: 16px;">Learn how to optimize your Docker workflow with these essential tips and tricks.</p>
+                        <a href="#" style="color: #64ffda; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 14px; display: inline-flex; align-items: center;">
+                            Read More <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article style="background-color: #112240; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Post 3" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <span style="background-color: rgba(100, 255, 218, 0.1); color: #64ffda; padding: 5px 10px; border-radius: 5px; font-size: 12px; font-family: 'SF Mono', monospace;">PROGRAMMING</span>
+                            <span style="margin-left: 15px; color: #495670; font-size: 12px;">March 22, 2023</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 15px;">Clean Code Principles Every Developer Should Follow</h3>
+                        <p style="color: #8892b0; margin-bottom: 20px; font-size: 16px;">Practical advice for writing maintainable, efficient code that stands the test of time.</p>
+                        <a href="#" style="color: #64ffda; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 14px; display: inline-flex; align-items: center;">
+                            Read More <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section style="margin: 80px 0; background-color: #112240; border-radius: 10px; padding: 50px; text-align: center;">
+            <h2 style="font-size: 28px; margin-bottom: 20px;">Subscribe to the Newsletter</h2>
+            <p style="color: #8892b0; max-width: 600px; margin: 0 auto 30px; font-size: 18px;">Get the latest articles, tutorials, and tech insights delivered straight to your inbox.</p>
+            <form style="display: flex; max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Your email address" style="flex-grow: 1; padding: 15px; border: none; border-radius: 5px 0 0 5px; background-color: #0a192f; color: #e6f1ff; font-size: 16px;">
+                <button type="submit" style="background-color: #64ffda; color: #0a192f; border: none; padding: 0 25px; border-radius: 0 5px 5px 0; font-family: 'SF Mono', monospace; font-weight: 600; cursor: pointer;">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #112240; padding: 50px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+                <a href="#" style="color: #e6f1ff; margin: 0 15px; font-size: 20px; transition: color 0.3s;" onmouseover="this.style.color='#64ffda'" onmouseout="this.style.color='#e6f1ff'"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: #e6f1ff; margin: 0 15px; font-size: 20px; transition: color 0.3s;" onmouseover="this.style.color='#64ffda'" onmouseout="this.style.color='#e6f1ff'"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: #e6f1ff; margin: 0 15px; font-size: 20px; transition: color 0.3s;" onmouseover="this.style.color='#64ffda'" onmouseout="this.style.color='#e6f1ff'"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: #e6f1ff; margin: 0 15px; font-size: 20px; transition: color 0.3s;" onmouseover="this.style.color='#64ffda'" onmouseout="this.style.color='#e6f1ff'"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="color: #495670; font-size: 14px;">© 2023 DevBlog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
