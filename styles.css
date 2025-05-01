@@ -695,3 +695,19 @@ section {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
+/* Mobile nav menu default hidden */
+#nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#nav-links.active {
+    display: flex;
+}
