@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -48,18 +50,46 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // // Animate skill bars on scroll
+    // const skillBars = document.querySelectorAll('.skill-level');
+    
+    // function animateSkillBars() {
+    //     skillBars.forEach(bar => {
+    //         const level = bar.getAttribute('data-level');
+    //         if (isElementInViewport(bar) {
+    //             bar.style.width = level + '%';
+    //         }
+    //     });
+    // }
+    
     // Animate skill bars on scroll
-    const skillBars = document.querySelectorAll('.skill-level');
-    
-    function animateSkillBars() {
-        skillBars.forEach(bar => {
-            const level = bar.getAttribute('data-level');
-            if (isElementInViewport(bar) {
-                bar.style.width = level + '%';
-            }
-        });
-    }
-    
+const skillBars = document.querySelectorAll('.skill-level');
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
+function animateSkillBars() {
+    skillBars.forEach(bar => {
+        const level = bar.getAttribute('data-level');
+        if (isElementInViewport(bar)) {
+            bar.style.width = level + '%';
+            bar.style.height = '20px'; // Optional: set height
+            bar.style.backgroundColor = '#2A5C8B'; // Optional: set color
+        }
+    });
+}
+
+// Trigger on scroll
+window.addEventListener('scroll', animateSkillBars);
+
+// Also trigger once on page load
+document.addEventListener('DOMContentLoaded', animateSkillBars);
+
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
         return (
@@ -100,21 +130,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Intersection Observer for scroll animations
-    const observerOptions = {
-        threshold: 0.1
-    };
+//     const observerOptions = {
+//         threshold: 0.1
+//     };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-            }
-        });
-    }, observerOptions);
+//     const observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 entry.target.classList.add('animate');
+//             }
+//         });
+//     }, observerOptions);
 
-    document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
-    });
-};
-
+//     document.querySelectorAll('section').forEach(section => {
+//         observer.observe(section);
+//     });
+ };
 

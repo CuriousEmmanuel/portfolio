@@ -5,7 +5,7 @@
     --accent: #e6f1ff;
     --background: #112240;
     --light-gray: #ccd6f6;
-    --dark-gray: #495670;
+    --dark-gray: #8a9ab3;
 }
 
 * {
@@ -61,7 +61,7 @@ h4 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--dark-gray);
     margin-bottom: 15px;
 }
@@ -203,6 +203,7 @@ nav ul li a:hover {
 /* About Section */
 #about {
     background-color: var(--background);
+    padding-top: ;
 }
 
 .about-content {
@@ -216,7 +217,7 @@ nav ul li a:hover {
 }
 
 .about-image {
-    width: 35%;
+    width: 45%;
 }
 
 .image-wrapper {
@@ -282,7 +283,7 @@ nav ul li a:hover {
 }
 
 .skill-bar {
-    width: 100%;
+    width: 90%;
     height: 8px;
     background-color: var(--background);
     border-radius: 4px;
@@ -293,7 +294,7 @@ nav ul li a:hover {
     height: 100%;
     background-color: var(--secondary);
     border-radius: 4px;
-    width: 0;
+    width: 4;
     transition: width 1.5s ease;
 }
 
